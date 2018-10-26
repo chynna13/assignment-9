@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 9</title>
+</head>
+<body>
+
+<p>Click the button on the bottom to see a list of Halloween costumes!.</p>
+
+<button onclick="myFunction()">Halloween Costumes</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var costumes = ["Witch", "Vampire", "Ghost", "Zombie"];
+    var i;
+    for (i = 0, len = costumes.length, text = ""; i < len; i++) {
+        text += costumes[i] + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
